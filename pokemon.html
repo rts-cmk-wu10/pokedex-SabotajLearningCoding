@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Pokémon-logo.png" type="image/png">
+    <link rel="stylesheet" href="pokedexStyle.css">
+    <script src="pokemon.js" defer></script>
+    <script src="pokesearch.js" defer></script>
+    <title>Pokémon</title>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <main>
+            <div class="pokedex">
+                <form class="pokedex__form" id="pokemon-search-form" autocomplete="off">
+                    <button type="submit" class="pokedex__form__search-btn">SØG</button>
+                    <label>
+                        <input type="search" name="search" list="pokemons" placeholder="Pikachu"
+                            class="pokedex__form__search-bar">
+                        <datalist id="pokemons">
+                        </datalist>
+                    </label>
+                    <div class="pokemon__homePageLogoContainer">
+                        <a class="pokemon__homePageA" href="index.html"><img src="images/Pokémon-logo.png"
+                                class="pokemon__homePageLogo"></a>
+                    </div>
+                </form>
+            </div>
+            <h1 class="pokedex__pokemonName"></h1>
+            <div class="pokemon__navPageBtn__container">
+                <button class="pokemon__navPageBtn pokemon__navPageBtn__pokemon__back" onclick="history.back()"><img
+                        src="images/arrow.png" alt="Tilbage"></button>
+                <button class="pokemon__navPageBtn pokemon__navPageBtn__pokemon__forward"
+                    onclick="history.forward()"><img src="images/arrow.png" alt="Fremad"></button>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div> <!-- WRAPPER END -->
+
+</body>
+
+</html>

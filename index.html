@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Pokémon-logo.png" type="image/png">
+    <link rel="stylesheet" href="pokedexStyle.css">
+    <script src="pokedex.js" defer></script>
+    <script src="pokesearch.js" defer></script>
+    <title>PokéDex</title>
+</head>
+
+<body>
+    <div id="Wrapper">
+        <main>
+            <form class="pokedex__form" id="pokemon-search-form" autocomplete="off">
+                <button type="submit" class="pokedex__form__search-btn">SØG</button>
+                <label>
+                    <input type="search" name="search" list="pokemons" placeholder="Pikachu"
+                        class="pokedex__form__search-bar">
+                    <datalist id="pokemons">
+                    </datalist>
+                </label>
+                <div class="pokemon__homePageLogoContainer">
+                    <a class="pokemon__homePageA" href="index.html"><img src="images/Pokémon-logo.png"
+                            class="pokemon__homePageLogo"></a>
+                </div>
+            </form>
+            <a href="/?offset=0" class="pokedex__firstPage pokedex__navPageBtn">Første side</a>
+            <a href="" class="pokedex__prevPage pokedex__navPageBtn">Forrige</a>
+            <a href="" class="pokedex__nextPage pokedex__navPageBtn">Næste</a>
+            <a href="/?offset=1280" class="pokedex__lastPage pokedex__navPageBtn">Sidste side</a>
+
+            <div class="pokemon-result"></div>
+            <ul class="pokeList">
+            </ul>
+        </main>
+
+        <footer>
+
+        </footer>
+    </div> <!-- WRAPPER END -->
+</body>
+
+</html>

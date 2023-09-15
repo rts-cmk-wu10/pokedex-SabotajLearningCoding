@@ -1,0 +1,363 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+/*------------- SITE SETTINGS ----------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-image: url(images/body-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Wrapper {
+    background-color: #EE0000;
+    width: 768px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.pokedex__form {
+    height: 45px;
+    width: 100%;
+    background-color: #AA0000;
+    margin-bottom: 10px;
+}
+
+.pokedex__form__search-btn {
+    height: 30px;
+    width: 50px;
+    background-color: #EE0000;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: none;
+
+    margin: 10px 10px 10px 40px;
+}
+
+.pokedex__form__search-bar {
+    height: 30px;
+    width: 200px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: solid 1px;
+    border-radius: 5px;
+
+    margin: 10px 10px 10px 20px;
+}
+
+/*------------- SITE SETTINGS END ---------------------*/
+
+/*------------- POKÉMON SETTINGS ----------------------*/
+.pokedex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.pokedex__pokemonName {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.pokedex__imgcontainer {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 280px;
+    height: 280px;
+    padding: 10px;
+
+    margin: 0 auto 10px;
+}
+
+.pokedex__info {
+    background-color: #AA0000;
+    border-radius: 10px;
+    width: 280px;
+
+    padding: 20px 0 20px 20px;
+    margin: 0 auto 10px;
+}
+
+.pokedex__infotext {
+    text-decoration: none;
+    list-style: none;
+    width: fit-content;
+}
+
+
+
+.pokemon__navPageBtn {
+    color: #FFF;
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: solid 2px #FFF;
+    background-color: #DD0000;
+
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0 16px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.pokemon__navPageBtn__container {
+    width: 180px;
+    position: relative;
+    margin: 0 auto;
+    /* border: solid 2px green; */
+}
+
+.pokemon__navPageBtn__pokemon__forward {
+    transform: rotate(0deg);
+}
+
+.pokemon__navPageBtn__pokemon__back {
+    transform: rotate(180deg);
+}
+
+/* 
+.pokedex__navPageBtn__pokemon__up{
+    transform: rotate(270deg);
+    display: none;
+}
+
+.pokedex__navPageBtn__pokemon__down{
+    transform: rotate(90deg);
+    display: none;
+} */
+
+/*------------- POKÉMON SETTINGS END ---------------------*/
+
+/*------------- POKÉDEX SETTINGS ------------------------*/
+
+.pokeList {
+    margin: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 20px;
+}
+
+.pokeList a {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px;
+    text-decoration: underline;
+    text-decoration-color: #CCC;
+}
+
+.pokedex__navPageBtn {
+    color: #FFF;
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: solid 2px #FFF;
+    background-color: #DD0000;
+
+    border-radius: 5px;
+    padding: 2px;
+    margin: 0 14px;
+}
+
+.pokedex__navPageBtn:hover {
+    background-color: #EE0000;
+    border-radius: 5px;
+    color: #EEE;
+}
+
+.pokedex__navPageBtn:active {
+    background-color: #FF0000;
+    border-radius: 5px;
+    color: #AAA;
+}
+
+/*------------- POKÉDEX SETTINGS END ----------------------*/
+/*------------- POKÉMON ABILITIES COLOR SETTINGS ----------------------*/
+
+/* Normal type */
+.pokedex__infotext li.type-normal {
+    background-color: #A8A878;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Grass type */
+.pokedex__infotext li.type-grass {
+    background-color: #78C850;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Water type */
+.pokedex__infotext li.type-water {
+    background-color: #6890F0;
+    color: #FFFFFF;
+    /* Hvid skriftfarve */
+}
+
+/* Electric type */
+.pokedex__infotext li.type-electric {
+    background-color: #F8D030;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Fighting type */
+.pokedex__infotext li.type-fighting {
+    background-color: #C03028;
+    color: #FFFFFF;
+    /* Hvid skriftfarve */
+}
+
+/* Fairy type */
+.pokedex__infotext li.type-fairy {
+    background-color: #EE99AC;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Dark type */
+.pokedex__infotext li.type-dark {
+    background-color: #000000;
+    color: #FFFFFF;
+    /* Hvid skriftfarve */
+}
+
+/* Fire type */
+.pokedex__infotext li.type-fire {
+    background-color: #F08030;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Ice type */
+.pokedex__infotext li.type-ice {
+    background-color: #98D8D8;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Steel type */
+.pokedex__infotext li.type-steel {
+    background-color: #B8B8D0;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Ghost type */
+.pokedex__infotext li.type-ghost {
+    background-color: #705898;
+    color: #FFFFFF;
+    /* Hvid skriftfarve */
+}
+
+/* Poison type */
+.pokedex__infotext li.type-poison {
+    background-color: #A040A0;
+    color: #FFFFFF;
+    /* Hvid skriftfarve */
+}
+
+/* Flying type */
+.pokedex__infotext li.type-flying {
+    background-color: #A890F0;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Bug type */
+.pokedex__infotext li.type-bug {
+    background-color: #A8B820;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Rock type */
+.pokedex__infotext li.type-rock {
+    background-color: #B8A038;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Psychic type */
+.pokedex__infotext li.type-psychic {
+    background-color: #F85888;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/* Dragon type */
+.pokedex__infotext li.type-dragon {
+    background-color: #7038F8;
+    color: #FFFFFF;
+    /* Hvid skriftfarve */
+}
+
+/* Ground type */
+.pokedex__infotext li.type-ground {
+    background-color: #E0C068;
+    color: #000000;
+    /* Sort skriftfarve */
+}
+
+/*------------- POKÉMON ABILITIES COLOR SETTINGS END ----------------------*/
+
+
+
+.pokemon__homePageLogoContainer {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+
+    right: 10px;
+    top: 10px;
+}
+
+.pokemon__homePageLogo {
+    border: solid 2px #FFF;
+    background-color: #DD0000;
+
+    border-radius: 5px;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.pokemon__homePageA {
+    color: #FFF;
+    text-decoration: none;
+    list-style: none;
+}
